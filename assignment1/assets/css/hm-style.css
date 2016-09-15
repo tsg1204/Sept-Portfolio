@@ -1,0 +1,346 @@
+@import url("reset.css");
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#777777;
+	font-size: 18px;
+	line-height: 34px;	
+	background-color: #ddd;
+}
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+h1, 
+h2,
+h3,
+p {
+	margin-bottom: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	color: #62d6e2;
+}
+h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+	text-align: center;
+}
+h2,
+h3 {
+	font-size: 22px;
+}
+/* Header and Navigation **********************/
+#top {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	width: 100%;
+}
+
+#logo {
+	width: 280px;
+	height: 90px;
+	background: #62d6e2;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 25px;
+	text-decoration: none;
+}
+#logo:hover { 
+	color: #999; 
+}
+nav {
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+}
+nav a:first-child {
+	border-left: 0 none;
+}
+
+nav a:hover { 
+	color: #333333; 
+}
+/* Main Container **********************/
+main {
+	padding-top: 130px;
+}
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: auto;
+	width: 100%;
+	border: 1px solid #ddd;
+	text-align: justify;
+}
+#hang-img {
+	margin-top: 80px;
+}
+.alive{
+	margin-top: 80px;
+    width:190px;
+    height:10px;
+    overflow: hidden;
+}
+.live1 {
+    width:190px;
+    height:100px;
+    overflow: hidden;
+}
+.live2 {
+    width:190px;
+    height:130px;
+    overflow: hidden;
+}
+.live3 {
+    width:190px;
+    height:160px;
+    overflow: hidden;
+}
+.live4{
+    width:190px;
+    height:190px;
+    overflow: hidden;
+}
+.live5{
+    width:190px;
+    height:220px;
+    overflow: hidden;
+}
+.live6{
+    width:190px;
+    height:260px;
+    overflow: hidden;
+}
+#euro-img {
+	position: relative;
+	width: 100%;
+	opacity: .2;
+}
+#game-container {
+	position: absolute;
+	z-index: 1;
+}
+#won {
+	color: #ff3300;
+}
+/* Right container ******************/
+.aside-container {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3,
+.aside-container h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+
+.aside-container-image {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.aside-container-image:last-child {
+	margin-right: 0;
+}
+
+/* Footer **************************/    
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #62d6e2;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+}
+
+#copywrite {
+	color: #d9d9d9;
+}
+
+
+/* Contact page **********************/
+#contact-form {
+	margin-bottom: 20px;
+}
+#contact-form fieldset {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+
+.form-submit-btn {
+    background-color: #62d6e2;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+button:hover {
+	background-color: #777777;
+}
+
+/* Portfolio **********************/
+.project {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+.project:nth-child(even) {
+	margin-right: 40px;
+}
+.project img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+.project h3 {
+	border-bottom: 0;
+	background: #62d6e2;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding: 15px;
+	width: 100%;
+	bottom: 20px;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.project h3:hover{
+	color: #777777;	
+}
+/************************Media query **********************/
+@media only screen and (max-width: 980px) {
+	.container {
+		padding: 0 20px;
+		max-width: 768px;
+	}
+	main.container {
+		padding-top: 130px;
+	}
+	.main-section {
+		max-width: 420px;
+	}
+	.project {
+		width: 100%;
+	}
+	.auth-image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main-section,
+	.aside-container {
+		max-width: 100%;
+	}
+	main {
+		overflow: auto;
+	}
+	.project {
+		width: 47%;
+		margin-bottom: 10px;
+	}
+	.project:nth-child(even){
+		margin-right: 0;
+	} 
+	.project:nth-child(odd) {
+		float: right;
+	}
+	.auth-image {
+		width: 50%;
+	}
+	.aside-container {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#top {
+		position: static;
+		margin-bottom: 20px;
+	}
+	header .container {
+		padding: 0;
+	}
+	main.container {
+		padding-top: 0;
+	}
+	#logo,
+	.project,
+	.auth-image {
+		width: 100%;
+	}
+	nav {
+		text-align: center;
+		width: 100%;
+		margin: 15px 0;
+	}
+	nav a {
+		width: 30%;
+		padding-left: 0;
+		margin-left: 0;
+	}
+}

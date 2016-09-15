@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors | Tatiana Grigorieva</title>
+  <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrapYeti.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrapstyle.css">
+  <!--[if lt IE 9]>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	  <div class="container">
+	    <div class="navbar-header">
+
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Tatiana Grigorieva</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="index.html">About</a></li>
+	        <li><a href="portfolio.html">Portfolio</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	    </div>
+	  </div>
+	</nav>
+<!-- Main section -->
+	<div class="container main-section">
+		<div class="row">
+			<div class="col-lg-8 col-sm-12">
+				<h1>Rock Paper Scissors</h1>
+				<hr>
+				<div>
+					<p>Press r, p, or s to start playing</p>
+				</div>
+				<div id="game">
+					
+				</div>
+	  		</div>
+
+			<div class="col-lg-4 col-sm-12 text-center aside-container">
+				<h4>Connect with Me</h4>
+
+				<a href="https://www.linkedin.com/in/tatiana-grigorieva-0a1785102" target="_blank"><img class="aside-container-image social" src="assets/images/linkedin.png"></a>
+
+				<a href="http://stackoverflow.com/users/3431043/user3431043" target="_blank"><img class="aside-container-image" src="assets/images/stackoverflow.png"></a>
+
+				<a href="https://github.com/tsg1204" target="_blank"><img class="aside-container-image" src="assets/images/github.png"></a>
+			</div>
+		</div>
+	<!-- end Main section -->
+	</div> <!--<div class="container">-->	<!-- Footer section -->
+	<footer class="footer">
+	  <div class="container">
+	    <p id="copywrite" class="text-muted">&copy;Copywrite 2016 Tatiana Grigorieva</p>
+	  </div>
+	</footer>
+
+	<script type="text/javascript">
+
+	// Create an array that lists out all of the options
+	var options = ['r','p','s'];
+	var wins = 0;
+	var loses = 0;
+	var ties = 0;
+
+
+	// Captures Key Clicks
+	document.onkeyup = function(event) {
+
+		// Determines which exact key was selected. Make it lowercase
+		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+
+		// Alerts with user guess
+		//alert(userGuess);
+
+		// Create code to randomly choose one of the three options (Computer) 
+		var computerGuess = options[Math.floor(Math.random()*options.length)];
+
+		// Alerts with Computer guess
+		//alert(computerGuess);
+
+		if (userGuess == computerGuess) {
+			ties++;
+		}
+		else if ((userGuess == "r" && computerGuess == "p") || (userGuess == "p" && computerGuess == "s") || (userGuess == "s" && computerGuess == "r")) {
+			loses++;
+		}
+		else if ((userGuess == "r" && computerGuess == "s") || ( userGuess == "s" && computerGuess == "p") || ( userGuess == "p" && computerGuess == "r")) {
+			wins++;
+		}
+
+		var html = "<p>Wins: " + wins + "</p>" +
+					"<p>Loses: " + loses + "</p>" +
+					"<p>Ties: " + ties + "</p>";
+		document.querySelector('#game').innerHTML = html;
+	}
+
+	</script>
+</body>
+</html>

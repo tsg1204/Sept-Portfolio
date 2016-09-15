@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/hm-style.css">
+  <!--[if lt IE 9]>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+
+<!-- Main section -->
+	<div class="container main-section">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>HANGMAN</h1>
+	  		</div>
+	  	</div>
+	  	<div class="row">
+			<div class="col-lg-6">
+				<div id="hang-img" class="alive">
+					<img src="assets/images/Hangman.jpg"/>
+				</div>
+			</div>
+			<div class="col-lg-6 ">
+				<h3>European Countries</h3>
+				<div id="game-container">
+					<p> Press any key to get started!</p>
+
+					<p id="won"></p>
+
+					<p id="wins">Wins: 0</p>
+
+					<p id="target-word">Current word: </p>
+
+					<p id="lives-left">Number of guesses remaining: </p>
+					
+					<p>Letters already guessed: </p>
+					<p id="previous-guesses"> </p>
+				</div>
+				<div>
+					<img id="euro-img" src="assets/images/Europe.png"/>
+				</div>
+				<audio id="win-sound">
+				    <source src=assets/sound/tada.wav>
+				</audio>
+				<audio id="lost-sound">
+				    <source src=assets/sound/gameover.wav>
+				</audio>
+			</div>
+		</div>
+	<!-- end Main section -->
+	</div> <!--<div class="container">-->	<!-- Footer section -->
+	<footer class="footer">
+	  <div class="container">
+	    <p id="copywrite" class="text-muted">&copy;Copywrite 2016 Tatiana Grigorieva</p>
+	  </div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/hwhangman.js"></script>
+</body>
+</html>

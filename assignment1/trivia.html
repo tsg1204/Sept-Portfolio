@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather Quiz</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/trivia-style.css">
+   <!--<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">-->
+   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+
+<!-- Main section -->
+	<div class="container main-section">
+		<div class="row">
+			<div><img id="top-image" src="assets/images/storm.jpg"/></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Weather Quiz!</h1>
+	  		</div>
+	  		<div id="timer" class="col-lg-offset-3 col-lg-6">Time: 07 seconds.</div>
+	  	</div>
+		<div class="row">
+			<button id="start" class="col-xs-offset-6 col-sm-6 col-sm-offset-6 col-sm-3 col-md-offset-4 col-md-3 col-lg-offset-4 col-lg-4">Start</button>
+		</div>
+		<div class="row">
+		  	<div id="question-contaner">
+		  		<div id="question" class="col-md-offset-1 col-md-4 col-lg-offset-3 col-lg-6">Question?</div>
+		  		<div class="col-lg-offset-3 col-lg-6">
+					<ul id="choices" class="list-group">
+					  <li id="0" class="list-group-item list-group-item-info option">Dapibus ac facilisis in</li>
+					  <li id="1" class="list-group-item list-group-item-info option">Cras sit amet nibh libero</li>
+					  <li id="2" class="list-group-item list-group-item-info option">Porta ac consectetur ac</li>
+					  <li id="3" class="list-group-item list-group-item-info option">Vestibulum at eros</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div id="answer-contaner" class="col-lg-offset-3 col-lg-6"></div>
+		</div>
+		<div class="row">
+		  	<div id="game-over-contaner" class="col-lg-offset-3 col-lg-6">
+		  		<div id="correct-answers" >Number of correct answers</div>
+		  		<div id="incorrect-answers" >Number of incorrect answers</div>
+		  		<div id="unanswered" >Number of unanswered questions</div>
+			</div>
+			<div id="picture" class="col-lg-offset-3 col-lg-6"></div>
+		</div>
+		<div class="row">
+			<button id="start-over" class="col-lg-offset-4 col-lg-4">Start Over?</button>
+		</div>
+	<!-- end Main section -->
+
+	</div> 
+
+	<script type="text/javascript" src="assets/js/trivia.js"></script>
+</body>
+</html>

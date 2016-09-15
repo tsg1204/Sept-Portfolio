@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RPG Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/rpg-style.css">
+   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+
+<!-- Main section -->
+	<div class="container main-section">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Heroes of Greek Mythology RPG!</h1>
+	  		</div>
+	  	</div>
+	  	<div class="row">
+			<div id="players" class="col-sm-offset-2 col-lg-8">
+				<p id="titleFirst">Choose a heroe to play: </p>
+			</div>
+		</div>
+		<div class="row">
+			<div id="achilles" class=" col-xs-offset-0 col-sm-offset-0 col-lg-offset-2 col-xs-3 col-sm-3 col-lg-2 thumbnail characters"><img  src="assets/images/achilles.jpg"/>
+				<div class="character-name">Achilles 150</div>
+			</div>
+			<div id="heracles" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/heracles.jpg"/>
+				<div class="character-name">Heracles 120</div>
+			</div>
+
+			<div id="perseus" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/perseus.jpg"/>
+				<div class="character-name">Perseus 100</div>
+			</div>
+
+			<div id="zeus" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/zeus.jpg"/>
+				<div class="character-name">Zeus 180</div>
+			</div>
+		</div>
+
+	  	<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-2">
+				<p id="titleYou">Your character: 
+				<span id="attacker"> </span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-xs-6 col-lg-8">
+				<p id="titleEnem">Your Enemies: </p>
+			</div>
+		</div>
+		<div id="enemies" class="row"></div>	
+
+		<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
+				<p>Fight Section </p>
+				<button id="btn-attack" disabled>Attack</button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-2">
+				<p id="titleDef">Defender: </p>
+				<div id="defender"> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
+				<div id="yPowers">Attacker Powers</div>
+				<div id="defPowers">Defender Powers</div>
+				<div id="win-lost"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
+				<button id="btn-start">Restart</button>
+			</div>
+		</div>
+				<audio id="win-sound">
+				    <source src=assets/sound/tada.wav>
+				</audio>
+				<audio id="lost-sound">
+				    <source src=assets/sound/gameover.wav>
+				</audio>
+		</div>
+	<!-- end Main section -->
+
+	</div> <!--<div class="container">-->	<!-- Footer section -->
+	<footer class="footer">
+	  <div class="container">
+	    <p id="copywrite" class="text-muted">&copy;Copywrite 2016 Tatiana Grigorieva</p>
+	  </div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/game.js"></script>
+</body>
+</html>

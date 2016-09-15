@@ -1,0 +1,22 @@
+/*@import "font-awesome";*/
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+/* Main Container **********************/
+main {
+	padding-top: 130px;
+}
+
+.jumbotron{
+	background-image: url("../images/train-station1.jpg");
+	background-size: cover;
+}
+.jumbotron h1 {
+	font-color: #fff;
+}
+
+
